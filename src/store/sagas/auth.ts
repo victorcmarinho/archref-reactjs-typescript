@@ -13,7 +13,7 @@ interface SignInData {
 export function* signIn({ email, password }: SignInData) {
   try {
     const response = yield call(api.post, 'sessions', { email, password });
-    localStorage.setItem('iDoctor:token', response.data.token);
+    localStorage.setItem('@Application:token', response.data.token);
     yield put(AuthActions.signInSuccess(response.data.token));
     yield put(push('/'));
   } catch (err) {

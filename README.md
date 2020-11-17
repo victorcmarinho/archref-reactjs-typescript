@@ -19,7 +19,6 @@ src
 |-- pages
 |-- routes
 |-- services
-|-- store
 |-- utils
 |-- App.tsx
 |-- index.tsx
@@ -57,10 +56,6 @@ Routes contains the `react-router-dom` implementation to map the project's route
 `./services`
 
 Services are responsible to handle the connection with all external elements, like APIs
-
-`./stores`
-
-Store is where the global state management is implemented. Every state that will be shared across components are managed here.
 
 `./utils`
 

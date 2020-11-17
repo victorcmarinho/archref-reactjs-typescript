@@ -1,19 +1,17 @@
 import React from 'react';
-import { Switch, BrowserRouter } from 'react-router-dom';
+import { Switch } from 'react-router-dom';
 
-import SignIn from '../pages/Auth/SignIn';
-import Dashboard from '../pages/Dashboard';
+import SignIn from '@pages/Auth/SignIn';
 
-import Private from './private';
-import Public from './public';
+import Dashboard from '@pages/Dashboard';
+import Route from './Route';
 
-const Routes = () => (
-  <BrowserRouter>
-    <Switch>
-      <Public path="/acessar" component={SignIn} />
-      <Private path="/" exact component={Dashboard} />
-    </Switch>
-  </BrowserRouter>
+const Routes: React.FC = () => (
+  <Switch>
+    <Route path="/" exact component={SignIn} />
+
+    <Route path="/dashboard" component={Dashboard} isPrivate />
+  </Switch>
 );
 
 export default Routes;

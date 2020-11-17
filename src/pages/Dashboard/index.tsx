@@ -2,7 +2,7 @@ import React from 'react';
 
 import { Container } from './styles';
 
-const Home: React.FC = () => {
+const Dashboard: React.FC = () => {
   return (
     <Container>
       <h1>Architecture Ref ReactJS</h1>
@@ -11,4 +11,4 @@ const Home: React.FC = () => {
   );
 };
 
-export default Home;
+export default Dashboard;

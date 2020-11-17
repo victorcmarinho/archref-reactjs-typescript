@@ -1,26 +1,23 @@
 import React from 'react';
-import { Provider } from 'react-redux';
-import ReduxToastr from 'react-redux-toastr';
-import { PersistGate } from 'redux-persist/integration/react';
 import { ThemeProvider } from 'styled-components';
+import { BrowserRouter as Router } from 'react-router-dom';
 
+import GlobalStyle from '@styles/Global';
+import theme from '@styles/Theme';
+import AppProvider from './hooks';
 import Routes from './routes';
-import { store, persistor } from './store';
-import GlobalStyle from './styles/Global';
-import theme from './styles/Theme';
 
-function App() {
+const App: React.FC = () => {
   return (
-    <Provider store={store}>
-      <PersistGate loading={null} persistor={persistor}>
-        <ThemeProvider theme={theme}>
+    <AppProvider>
+      <ThemeProvider theme={theme}>
+        <Router>
           <Routes />
-          <ReduxToastr />
-          <GlobalStyle />
-        </ThemeProvider>
-      </PersistGate>
-    </Provider>
+        </Router>
+        <GlobalStyle />
+      </ThemeProvider>
+    </AppProvider>
   );
-}
+};
 
 export default App;

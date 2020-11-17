@@ -2,7 +2,7 @@ import React from 'react';
 
 import { Container } from './styles';
 
-const Home: React.FC = () => {
+const SignIn: React.FC = () => {
   return (
     <Container>
       <h1>SignIn Page</h1>
@@ -10,4 +10,4 @@ const Home: React.FC = () => {
   );
 };
 
-export default Home;
+export default SignIn;

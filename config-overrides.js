@@ -33,10 +33,6 @@ module.exports = override(
           rootPathSuffix: 'src/services',
         },
         {
-          rootPathPrefix: '@store/',
-          rootPathSuffix: 'src/store',
-        },
-        {
           rootPathPrefix: '@styles/',
           rootPathSuffix: 'src/styles',
         },

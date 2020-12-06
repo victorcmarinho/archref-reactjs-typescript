@@ -29,6 +29,7 @@
     "react/jsx-filename-extension": [1, { "extensions": [".tsx"] }],
     "import/prefer-default-export": "off",
     "prettier/prettier": "error",
+    "@typescript-eslint/no-var-requires": "off",
     "import/extensions": [
       "error",
       "ignorePackages",
@@ -77,10 +78,6 @@
           {
             "rootPathPrefix": "@services/",
             "rootPathSuffix": "src/services"
-          },
-          {
-            "rootPathPrefix": "@store/",
-            "rootPathSuffix": "src/store"
           },
           {
             "rootPathPrefix": "@styles/",

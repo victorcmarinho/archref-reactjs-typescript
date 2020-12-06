@@ -30,6 +30,7 @@
     "import/prefer-default-export": "off",
     "prettier/prettier": "error",
     "@typescript-eslint/no-var-requires": "off",
+    "react/jsx-props-no-spreading": "off",
     "import/extensions": [
       "error",
       "ignorePackages",

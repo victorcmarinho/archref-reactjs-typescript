@@ -7,8 +7,6 @@ interface IUser {
   email: string;
   name: string;
   type: number;
-  created_at: string;
-  updated_at: string;
 }
 
 interface IAuthState {

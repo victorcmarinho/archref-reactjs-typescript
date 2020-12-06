@@ -1,11 +1,5 @@
-import {
-  RouteProps as ReactDOMRouteProps,
-  RouteComponentProps,
-} from 'react-router-dom';
+import { RouteProps as ReactDOMRouteProps } from 'react-router-dom';
 
-export interface RouteProps extends ReactDOMRouteProps {
+export interface IRouteProps extends ReactDOMRouteProps {
   isPrivate?: boolean;
-  component?:
-    | React.ComponentType<RouteComponentProps<any>>
-    | React.ComponentType<any>;
 }

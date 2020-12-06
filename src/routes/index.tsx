@@ -2,8 +2,8 @@ import React from 'react';
 import { Switch } from 'react-router-dom';
 
 import SignIn from '@pages/Auth/SignIn';
-
 import Dashboard from '@pages/Dashboard';
+
 import Route from './Route';
 
 const Routes: React.FC = () => (

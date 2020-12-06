@@ -19,7 +19,7 @@
     "react-scripts": "4.0.1",
     "seamless-immutable": "^7.1.4",
     "styled-components": "^5.2.1",
-    "typescript": "^4.1.2"
+    "typescript": "4.1.0"
   },
   "scripts": {
     "start": "react-app-rewired start",
@@ -47,8 +47,8 @@
     "@types/react-router-dom": "^5.1.6",
     "@types/seamless-immutable": "^7.1.15",
     "@types/styled-components": "^5.1.4",
-    "@typescript-eslint/eslint-plugin": "^4.9.0",
-    "@typescript-eslint/parser": "^4.9.0",
+    "@typescript-eslint/eslint-plugin": "4.0.1",
+    "@typescript-eslint/parser": "4.0.1",
     "babel-plugin-root-import": "^6.6.0",
     "eslint": "^7.15.0",
     "eslint-config-airbnb": "^18.2.1",

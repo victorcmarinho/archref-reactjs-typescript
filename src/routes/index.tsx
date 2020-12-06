@@ -1,8 +1,8 @@
 import React from 'react';
 import { Switch } from 'react-router-dom';
 
-import SignIn from '@pages/Auth/SignIn';
 import Dashboard from '@pages/Dashboard';
+import SignIn from '@pages/Auth/SignIn';
 
 import Route from './Route';
 
